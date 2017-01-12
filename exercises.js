@@ -89,7 +89,7 @@ var evenNumArr = [];
 		}
 	}
 
-console.log(evenNumArr);
+//console.log(evenNumArr);
 
 /* 6) Up the Odds
 Declare a variable named `oddSum` and assign it to the Number value 0.
@@ -99,9 +99,14 @@ Console.log your results.
 */
 
 var oddSum = 0;
-	for (var i = 0; i<50; i++){
-		//console.log(oddSum);
+	for (var i = 1; i<102; i++){
+		if(i % 2 !== 0){
+			//console.log(oddSum + i);
+			oddSum += i;
+		}
 	}
+
+console.log(oddSum);
 
 /* 7) Opps There It is
 Declare a variable named `oopsArray` and assign its to the following array: `[ 'turn' , , 'down' , , 'for' , , 'what' ]`.
