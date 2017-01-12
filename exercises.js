@@ -8,7 +8,9 @@ Write a for-loop that will iterate through 20 numbers (starting at 1 and ending 
 .
 "Now serving 20."
 */
-
+for (var i = 1; i<21; i++){
+	//console.log("Now serving " + i);
+}
 
 /* 2) Pop Charts
 Write a for-loop that will iterate through the topFive array below and console.log the following message:
@@ -20,6 +22,9 @@ Write a for-loop that will iterate through the topFive array below and console.l
 */
 
 var topFive = ["Closer", "Starboy", "I Feel It Coming", "Let Me Love You", "24K Magic"];
+for (var i = 0; i<topFive.length; i++){
+	//console.log("This week's chart buster is: " + topFive[i]);
+}
 
 
 /* 3) Dead Presidents
@@ -43,6 +48,18 @@ This function will iterate through the person parameter and console.log the foll
 */
 
 
+var presidents = ["Washington", "Adams", "Jefferson", "Madison", "Monroe"];
+	for (var i = 0; i<presidents.length; i++){
+		//console.log("The value at" + " " + i + " " + "is " + presidents[i]);
+	}
+
+function leaders(person){
+	return ("President " + person + " was a great leader.");
+}
+
+//console.log(leaders(presidents));
+
+
 /* 4) Line Number
 Declare a variable named `stringOfNumbers` and assign its value to an empty string. 
 
@@ -50,7 +67,12 @@ Write a for-loop that concatenates a Number value into that string on each itera
 
 4-A) Create a function called `appendToString` and have it produce the same result as above. Console.log your results.
 */
+var stringOfNumbers = "";
+	for (var i = 10; i<21; i++){
+		stringOfNumbers += i;
+	}
 
+console.log(stringOfNumbers);
 
 /* 5) Even Stevens
 Declare a variable named `evenNumArr` and assign its value to an empty array. 
@@ -58,7 +80,10 @@ Declare a variable named `evenNumArr` and assign its value to an empty array.
 Write a for-loop that will push even numbers to the `evenNumArr` array. We want to push 50 even even numbers starting from 0.
 Console.log your results.
 */
+var evenNumArr = [];
+	for (var i = 0; i<100; i++)
 
+//console.log(evenNumArr);
 
 /* 6) Up the Odds
 Declare a variable named `oddSum` and assign it to the Number value 0.
@@ -66,7 +91,11 @@ Declare a variable named `oddSum` and assign it to the Number value 0.
 Write a for-loop that will sum up odd numbers to the `oddSum` variable. We want to add 50 odd numbers starting from 1.
 Console.log your results.
 */
-  
+
+var oddSum = 0;
+	for (var i = 0; i<50; i++){
+		//console.log(oddSum);
+	}
 
 /* 7) Opps There It is
 Declare a variable named `oopsArray` and assign its to the following array: `[ 'turn' , , 'down' , , 'for' , , 'what' ]`.
@@ -74,6 +103,7 @@ Note that every odd index value in `oopsArray` is currently `undefined`. Using a
 
 [ 'turn' , 'nope' , 'down' , 'nope' , 'for' , 'nope' , 'what' ]
 */
+//var oopsArray = ["turn", , "down", , "for", , "what"];
 
 
 /* 8) Is It There Opps
